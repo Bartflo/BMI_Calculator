@@ -1,0 +1,82 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+    color:#f3f3f3;
+    line-height:1.4;
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url("background_image.jpg");
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-attachment: fixed;
+}
+/*** Hidden Arrows input type number ***/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+p.header{
+    font-size:36px;
+}
+p.input{
+    font-size:30px;
+}
+p.range{
+    font-size:24px;
+}
+p.value{
+    font-size:12px;
+}
+form{
+    background:rgba(27,27,50,0.8);
+    padding:5.0rem;
+    max-width:720px;
+    max-height:1440px;
+    align-items:center;
+    border-radius:5px;
+    vertical-align:middle;
+    display:table-cell;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+}
+
+.input,
+.submitButton{
+    display:inline-block;
+    margin-right:0.625rem;
+    min-height: 1.25rem;
+    min-width:1.25rem;
+    width:100%;
+    height:2.5rem;
+    border:none;
+    border-radius:5px;
+}
+.submitButton{
+    margin-top:25px;
+    background:#37af65;
+    font-weight:600;
+    font-size:18px;
+    box-shadow:0px 0px 12px -2px rgba(0,0,0,0.5);
+}
+.submitButton:hover{
+    opacity:0.8;
+}
+.submitButton:active{
+    transform:translateY(5px);    
+}
+label{
+    font-size:24px;
+    justify-content: center;
+    margin-top:10px;
+}
+.smaller{
+    font-size:14px;
+}

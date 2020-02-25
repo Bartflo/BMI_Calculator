@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>BMI - Calculator</title>
+<!--Scripts-->
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--Links-->
+<link href="https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<link href="#" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <form id="bmiCalc">
+        <p class="header">BMI Calculator</p>
+        
+        <div class="form-group">
+            <p class="input">Waga</p>
+            <input type="number" id="weight" min="30" max="150" class="input">
+        </div>
+
+
+        <div class="form-group">
+            <p class="input">Wzrost <span class="smaller">(w cm)</span></p>
+            <input type="number" id="height" min="100" max="250" class="input">
+        </div>
+
+        <div class="form-group">
+            <button type="button" id="submit-button" class="submitButton" value="=" onclick="Count()">Oblicz</button>
+            <label id="result"/>
+        </div>
+        <hr>
+        <div class="form-group">
+            <p class="range">Zakresy wartości BMI</p>
+            <p class="value">Mnie niż 16 - wygłodzenie</p>
+            <p class="value">16 - 16.99 - wychudzenie</p>
+            <p class="value">17 - 18.49 - niedowaga</p>
+            <p class="value">18.5 - 24.99 - wartość prawidłowa</p>
+            <p class="value">25 - 29.99 - nadwaga</p>
+            <p class="value">30 - 34.99 - I stopień otyłości</p>
+            <p class="value">35 - 39.99 - II stopień otyłości</p>
+            <p class="value">powyżej 40 - otyłość skrajna</p>
+        </div>
+    </form>
+</body>
